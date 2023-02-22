@@ -1,12 +1,29 @@
-import logo from './logo.svg';
+import React from "react";
+import Header from "./Header";
+import Barchart from "./Barchart";
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-     Compunnel
-    </div>
-  );
-}
+
+import {BrowserRouter ,Route,Routes} from 'react-router-dom'
+
+// import {GlobalStyle} from "./GlobalStyle";
+
+
+
+
+const App = () => {
+  return (<BrowserRouter>
+  {/* <GlobalStyle/> */}
+  <Header/>
+  <Routes>
+   
+    <Route path="/chart" element={<Barchart />}/>
+
+  </Routes>
+
+ 
+  </BrowserRouter>);
+};
 
 export default App;
