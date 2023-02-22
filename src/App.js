@@ -18,7 +18,7 @@ const App = () => {
   <Header/>
   <Routes>
    
-    <Route path="/compunnelUI/chart" element={<Barchart />}/>
+    <Route path="/" element={<Barchart />}/>
 
   </Routes>
 
